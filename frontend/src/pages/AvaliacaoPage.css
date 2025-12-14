@@ -1,0 +1,154 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  font-family: Arial, sans-serif;
+}
+
+.avaliacao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  background-color: #a8d8ff; 
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0;
+}
+.botao-voltar {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f7b6d2;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao-voltar:hover {
+  background-color: #f28cb7;
+  transform: scale(1.05);
+}
+
+
+.avaliacao-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 40px 50px;
+  max-width: 500px;
+  width: 90%;
+  margin: 40px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.avaliacao-card:hover {
+  transform: translateY(-3px);
+}
+
+.avaliacao-title {
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.avaliacao-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.avaliacao-input,
+.avaliacao-select,
+.avaliacao-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.2s;
+}
+
+.avaliacao-input:focus,
+.avaliacao-select:focus,
+.avaliacao-textarea:focus {
+  border-color: #a8c9ff;
+}
+
+.avaliacao-textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+
+.avaliacao-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.botao-enviar,
+.botao-cancelar {
+  padding: 10px 25px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao-enviar {
+  background-color: #a8d8ff;
+    color: #fff;
+}
+
+.botao-enviar:hover {
+  background-color: #8cc7ff;
+  transform: scale(1.03);
+}
+
+.botao-cancelar {
+  background-color: #f7b6d2; 
+  color: #fff;
+}
+
+.botao-cancelar:hover {
+  background-color: #f28cb7;
+  transform: scale(1.03);
+}
+
+.footer {
+  width: 100%;
+  background-color: #f7b6d2; 
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 13px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}

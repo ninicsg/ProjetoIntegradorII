@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+
+.header-dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ffe6f2, #e3f2fd);
+  color: #333;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-dashboard {
+  font-size: 24px;
+  color: #ff66b2;
+  margin: 0;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.usuario-nome {
+  font-weight: bold;
+  color: #444;
+}
+
+.btn-sair {
+  background-color: #ffb3c6;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-sair:hover {
+  background-color: #ff85a2;
+}
+
+.cliente-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.cliente-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.dashboard-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.btn-dashboard {
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-dashboard:hover {
+  transform: translateY(-2px);
+}
+
+.rosa {
+  background-color: #ffb3c6;
+}
+.rosa:hover {
+  background-color: #ff85a2;
+}
+
+.azul {
+  background-color: #a3d5ff;
+}
+.azul:hover {
+  background-color: #7fc8ff;
+}
+
+.lilas {
+  background-color: #d3bfff;
+}
+.lilas:hover {
+  background-color: #c2a8ff;
+}
+
+.verde {
+  background-color: #a0e7af;
+}
+.verde:hover {
+  background-color: #81d997;
+}
+
+.dashboard-conteudo {
+  text-align: center;
+}
+
+.mensagem-inicial {
+  color: #666;
+  font-size: 16px;
+}
+
+.subtitulo {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.mensagem-vazia {
+  color: #999;
+  font-style: italic;
+}
+
+.tabela-agendamentos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabela-agendamentos th,
+.tabela-agendamentos td {
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tabela-agendamentos th {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.botao-avaliar {
+  background-color: #ffb3c6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.botao-avaliar:hover {
+  background-color: #ff85a2;
+}
+
+.form-agendamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-agendamento label {
+  align-self: flex-start;
+  margin-left: 10%;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-agendamento select,
+.form-agendamento input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-agendamento select:focus,
+.form-agendamento input:focus {
+  border-color: #a3d5ff;
+  outline: none;
+}
+
+.btn-salvar {
+  background-color: #a3d5ff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-salvar:hover {
+  background-color: #7fc8ff;
+}
+
+.mensagem-feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.secao-fidelidade,
+.secao-perfil {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.btn-editar {
+  margin-top: 15px;
+  background-color: #a3d5ff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-editar:hover {
+  background-color: #7fc8ff;
+}
+
+@media (max-width: 768px) {
+  .dashboard-botoes {
+    flex-direction: column;
+  }
+
+  .cliente-card {
+    padding: 20px;
+  }
+
+  .form-agendamento label {
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .form-agendamento select,
+  .form-agendamento input {
+    width: 100%;
+  }
+}

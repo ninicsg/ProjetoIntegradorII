@@ -1,0 +1,153 @@
+
+.admin-agendamentos-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.admin-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+.titulo-card {
+  color: #e75480;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* --- Estilos do Formulário --- */
+.form-admin-agendamento {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group.small {
+  flex: 0.5; /* Campos de data e hora menores */
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.form-group select,
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn-agendar-full {
+  background-color: #28a745; 
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-agendar-full:hover {
+  background-color: #218838;
+}
+
+/* --- Estilos da Tabela e Resto (Mantidos) --- */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-voltar {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tabela-admin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabela-admin th,
+.tabela-admin td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-admin th {
+  background-color: #fdf2f8;
+  color: #b61555;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-badge.pendente { background-color: #fff3cd; color: #856404; }
+.status-badge.agendado { background-color: #d1ecf1; color: #0c5460; }
+.status-badge.realizado { background-color: #d4edda; color: #155724; }
+.status-badge.cancelado { background-color: #f8d7da; color: #721c24; }
+
+.btn-cancelar {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.btn-cancelar:hover { background-color: #cc0000; }
+
+.btn-confirmar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin: 0 5px;
+}
+.btn-confirmar:hover { background-color: #218838; }

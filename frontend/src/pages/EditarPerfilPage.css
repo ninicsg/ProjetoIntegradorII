@@ -1,0 +1,69 @@
+.editar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff6fa;
+}
+
+.editar-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.editar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.editar-form label {
+  font-weight: bold;
+  color: #444;
+  text-align: left;
+}
+
+.editar-form input {
+  padding: 10px;
+  border: 2px solid #ffd6e8;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.editar-botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-salvar {
+  background-color: #e75480;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-voltar {
+  background-color: #a3a3ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-salvar:hover {
+  background-color: #d94a75;
+}
+
+.btn-voltar:hover {
+  background-color: #8c8cff;
+}

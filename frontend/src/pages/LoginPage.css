@@ -1,0 +1,157 @@
+.login-background {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.login-header {
+  margin-bottom: 25px;
+}
+
+.login-header h2 {
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.login-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.login-icon {
+  background: linear-gradient(90deg, #d63384, #ff79c6);
+  padding: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  text-align: left;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #d63384;
+}
+
+button {
+  background: linear-gradient(90deg, #d63384, #ff79c6);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.login-error {
+  color: red;
+  background: #ffe5e5;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-footer {
+  margin-top: 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: #d63384;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.login-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.btn-cadastro {
+  background-color: #e75480;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cadastro:hover {
+  background-color: #d14470;
+}
+
+.btn-login {
+  background-color: #a020f0;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background-color: #871bce;
+}

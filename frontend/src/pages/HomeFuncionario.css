@@ -1,0 +1,126 @@
+/* reset p garantir que nada tenha margens ou espaços errados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.funcionario-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-dashboard {
+  width: 100%;               
+  background-color: #e68cb0;
+  color: white;
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;    
+  position: relative;
+  z-index: 5;
+}
+
+.logo-dashboard {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.usuario-nome {
+  font-weight: bold;
+}
+
+.btn-sair {
+  background-color: #ffb6c1;
+  color: #b61555;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-sair:hover {
+  background-color: #ffc7d1;
+}
+
+.funcionario-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.funcionario-card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 22px;
+  color: #b61555;
+  margin-bottom: 28px;
+}
+
+.botoes-funcionario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.btn-dashboard {
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+.btn-dashboard.rosa {
+  background: linear-gradient(135deg, #ffb6c1, #ff8fa3);
+  color: #6d0031;
+}
+
+.btn-dashboard.rosa:hover {
+  background: linear-gradient(135deg, #ffc2cc, #ff9fb1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 140, 163, 0.35);
+}
+
+.btn-dashboard.azul {
+  background: linear-gradient(135deg, #a8d8ff, #7fc6ff);
+  color: #003b5c;
+}
+
+.btn-dashboard.azul:hover {
+  background: linear-gradient(135deg, #bfe2ff, #9dd3ff);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(127, 198, 255, 0.35);
+}
