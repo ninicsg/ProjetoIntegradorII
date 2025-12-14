@@ -18,3 +18,5 @@ If you are developing a production application, we recommend using TypeScript wi
 O arquivo .env deve ser configurado pelo próprio usuario.
 
 As bibliotecas estão todas versionadas no gerenciador de pacotes. (usar npm install na pasta do backend e do frontend).
+
+O banco deve ser baixado e utilizado, bd.sql.
